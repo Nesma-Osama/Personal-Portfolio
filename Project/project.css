@@ -1,0 +1,272 @@
+body{
+    background-color: white;
+    max-width: 100%;
+}
+.ALL{
+    margin: 10px 10px;
+    margin-right: 10px;
+}
+
+
+#home{
+    background-image:url('https://wallpapercave.com/wp/61av7Bc.jpg');
+padding-left: 3rem;
+padding-bottom:0px ;
+border-style: groove;
+border-radius: 2rem;
+border-color: blanchedalmond;
+}
+#Nav{
+  /*  background-color:rgb(72, 59, 150);*/
+   /* background-color:rgb(65,105,225);*/
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -3rem;
+    padding: .1rem 1rem;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    align-items: center;
+    z-index: 2;
+    width:94%;
+
+}
+
+.ul1 {
+    list-style-type: none;
+
+}
+.ul1 li {
+    display: inline-block;
+    margin: 20px;
+    margin-top:15px ;
+}
+.NavTitle{
+    font-family: Alkatra, Geneva, Tahoma, sans-serif;
+    align-content: flex-end;
+    font-weight: 500;
+}
+.ul1 a:link{
+    text-decoration: none;
+    color:white;
+}
+.ul1 a:visited{
+    color:white;
+}
+.ul1 a:hover{
+    color:gray;
+
+}
+.ul1 a:active{
+    color:darkgrey;
+}
+.Button{
+    display: inline-block;
+    border-style: groove;
+    border-radius: 40px;
+    width: 120px;
+    height: 50px;
+    background-color:orange;
+    border-color: orange;
+    text-align:center;
+    margin: 20px;
+    text-decoration: none;
+    box-sizing: 1px;
+    padding:1rem;
+}
+.Button a:link ,a:visited{
+    color:aliceblue;
+    text-decoration: none;
+}
+.Button a:hover{
+    color:black;
+    text-decoration: none;
+}
+.infoContant{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14rem;
+    margin-top: 3rem;
+}
+.Text{
+    color: white;
+    text-align: justify;
+    width: 30%;
+    text-align: start;
+}
+.Text h1{
+    font-family: Arial, Helvetica, sans-serif;
+  
+    font-weight: 100;
+}
+.Text p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    word-spacing: .6rem;
+}
+
+.infoImage{
+align-self: flex-end;
+}
+#Knowledge{
+
+margin: 70px;
+}
+.title{
+    color:rgb(6, 6, 210);
+    font-weight: 400;
+    text-align: center;
+    font-family: Baskervville, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Header{
+    font-family: Besley, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 100;
+    margin-top: -1rem;
+    margin-bottom: -.5rem;
+}
+.parg{
+    text-align: center;
+font-family:Bellota Text, 'Times New Roman', Times, serif ;
+}
+.Sections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1.3rem;
+}
+.sectionContent
+{
+    background-image: url("https://th.bing.com/th/id/OIP.zPJHC4W2oJQG3YHn0cGPCgHaE7?pid=ImgDet&rs=1");
+    border-style: solid;
+    width:30%;
+    border-color: white;
+    border-radius: 3em;
+}
+
+.sectionContent h3{
+    text-align: center;
+    font-weight: 200;
+    margin-top: 3rem;
+    font-family:Alkatra, 'Times New Roman', Times, serif;
+}
+
+.icon {
+margin-top: 3rem;
+text-align: center;
+
+}
+.color{
+    background-color:rgb(7, 42, 146);
+   border-style: solid;
+   border-radius: .1rem;
+}
+
+.clicked{
+  color:orange !important;
+}
+
+.beliefContent{
+background-color: white;
+width:30%;
+margin-top: 50px;
+
+}
+.beliefContent img{
+    border-radius: 8rem;
+    border-style: solid;
+    border-color: white;
+    margin-top: -30px;
+
+}
+#Beliefs
+{
+margin: 70px;
+}
+
+#Contact{
+ background-image:url('https://wallpapercave.com/wp/61av7Bc.jpg');
+ padding-left: 3rem;
+padding-bottom:0px ;
+border-style: groove;
+ border-radius: 2rem;
+ border-color: blanchedalmond;
+margin-top: 70px;
+margin-bottom: 70px;
+}
+#Protfolio{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.LinksContain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 30px;
+}
+.linked{
+    display: inline-block;
+margin-left: 40px;
+border-width: 1px;
+border-style: solid;
+padding: 7px;
+border-radius: 2px;
+border-color: rgb(12, 12, 222);
+color: black;
+}
+
+.procolor{
+    background-color: navy;
+    color:white;
+}
+.sectionProjects{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  repeat(2,1fr);
+    row-gap: 15px;
+    column-gap: 20px;
+    }
+ 
+.project{
+    display:inline-block;
+  
+}
+.project:hover{
+    transform:scale(1.1,1.1);
+}
+.image{
+    border-style: solid;
+    border-width: 2px;
+    border-color:gray;
+  border-radius: 20px;
+    text-align: center;
+}
+.content{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: center;
+justify-content: space-between;
+width:90%;
+
+}
+.content a{
+    padding-top: 12px;
+}
+.textcontainer{
+ font-style: italic;
+ font-size: 14px;
+ padding-left: 10px;
+ line-height: .3rem;
+}
