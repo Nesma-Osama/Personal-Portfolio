@@ -1,4 +1,34 @@
-@ -32,6 +32,113 @@ for(const item of links)
+
+window.addEventListener('DOMContentLoaded',()=>{
+    //navigation bar
+    window.onscroll = ( )=>{
+        
+        if (document.body.scrollTop > 10 ) {
+        document.getElementById("Nav").classList.add ("color");
+        } else {
+        document.getElementById("Nav").classList.remove ( "color");
+        }
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////////
+//Nav
+const links=document.getElementsByClassName('links');
+for(const item of links)
+{
+    item.addEventListener('click',()=>{
+        document.getElementsByClassName('clicked')[0].classList.remove('clicked')
+        item.classList.add('clicked')
+    })
+}
+///////////////////////////////////// ////////////////////////////////////////////////////////
+    const section=document.getElementsByClassName('SectionContent');
+    for(const item of section)
+    {
+       item.addEventListener("mouseover",()=>{
+        item.style.backgroundImage = `url("https://pal-melaminat.ro/wp-content/uploads/2019/03/PAL-Melaminat-Albastru-Royal-01125-BS-Kronospan.jpeg")`
+    })
+        item.addEventListener("mouseout",()=>{
+           item.style.backgroundImage= `url( "https://th.bing.com/th/id/OIP.zPJHC4W2oJQG3YHn0cGPCgHaE7?pid=ImgDet&rs=1")`;
+    
         })
  }
 //////////////////////////////////////////////////////////////
@@ -111,4 +141,8 @@ document.getElementsByClassName('Projects')[0].appendChild(div1)
 
 
 })
+
+
+
+
 
