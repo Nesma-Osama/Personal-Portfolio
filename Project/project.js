@@ -1,34 +1,4 @@
-
-window.addEventListener('DOMContentLoaded',()=>{
-    //navigation bar
-    window.onscroll = ( )=>{
-        
-        if (document.body.scrollTop > 10 ) {
-        document.getElementById("Nav").classList.add ("color");
-        } else {
-        document.getElementById("Nav").classList.remove ( "color");
-        }
-    }
-    //////////////////////////////////////////////////////////////////////////////////////////////
-//Nav
-const links=document.getElementsByClassName('links');
-for(const item of links)
-{
-    item.addEventListener('click',()=>{
-        document.getElementsByClassName('clicked')[0].classList.remove('clicked')
-        item.classList.add('clicked')
-    })
-}
-///////////////////////////////////// ////////////////////////////////////////////////////////
-    const section=document.getElementsByClassName('SectionContent');
-    for(const item of section)
-    {
-       item.addEventListener("mouseover",()=>{
-        item.style.backgroundImage = `url("https://pal-melaminat.ro/wp-content/uploads/2019/03/PAL-Melaminat-Albastru-Royal-01125-BS-Kronospan.jpeg")`
-    })
-        item.addEventListener("mouseout",()=>{
-           item.style.backgroundImage= `url( "https://th.bing.com/th/id/OIP.zPJHC4W2oJQG3YHn0cGPCgHaE7?pid=ImgDet&rs=1")`;
-    
+@ -32,6 +32,113 @@ for(const item of links)
         })
  }
 //////////////////////////////////////////////////////////////
@@ -60,19 +30,19 @@ const Paint={
             header:'AES-Encryption-And-Decryption. ',
             title:'Logic Design'
             }
-            const Protfolio ={
-                image:"https://th.bing.com/th/id/OIP.wFG-Zzjg3jT_eYZVZ0MG7QHaDj?pid=ImgDet&rs=1",
-                link:"https://github.com/Nesma-Osama/-AES-encryption-and-decryption.",
+            const Portfolio ={
+                image:"https://th.bing.com/th/id/R.4ce2ce4ac0fe241ec8641bfb63fe7b02?rik=NMzX4RA0oUu2UA&pid=ImgRaw&r=0",
+                link:"https://github.com/Nesma-Osama/Personal-Portfolio",
                 icon:"https://e7.pngegg.com/pngimages/869/487/png-clipart-bullet-computer-icons-arrow-angle-image-file-formats-thumbnail.png",
-                header:'AES-Encryption-And-Decryption. ',
-                title:'Logic Design'
+                header:'Personal Portfolio ',
+                title:'Front End'
                 }
 ////
 //put into arrays
-    const ALL=[Paint,ProcessScheduler,TasksApp,AESEncryptionAndDecryption]
+    const ALL=[Paint,ProcessScheduler,TasksApp,AESEncryptionAndDecryption,Portfolio]
     const C =[Paint,ProcessScheduler]
     const DataStructures=[ProcessScheduler]
-    const FrontEnd=[TasksApp]
+    const FrontEnd=[TasksApp,Portfolio]
     const React=[TasksApp]
     const LogicDesign=[AESEncryptionAndDecryption]
 
@@ -85,6 +55,8 @@ for(const item of procont)
     item.addEventListener('click',()=>{
     document.getElementsByClassName('procolor')[0].classList.remove('procolor')
     item.classList.add('procolor')
+  
+
     print()
        }
         )
@@ -139,8 +111,4 @@ document.getElementsByClassName('Projects')[0].appendChild(div1)
 
 
 })
-
-
-
-
 
